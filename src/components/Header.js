@@ -8,7 +8,7 @@ const Header = () => {
     <Navbar variant='dark' bg='dark' style={{height:80}}>
         <Container>
             <Navbar.Brand>
-                <Link>Shopping Cart</Link>
+                <Link to='/'>Shopping Cart</Link>
                 
             </Navbar.Brand>
             <Navbar.Text className='search'>
