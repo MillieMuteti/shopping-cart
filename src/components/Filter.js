@@ -5,7 +5,7 @@ import Rating from './Rating'
 
 const Filter = () => {
 
-    const [rating, setrating] = useState(5)
+    const [rating, setRating] = useState(3)
   return (
    <div className="filters">
       <span className="title">Filter Products</span>
@@ -74,13 +74,13 @@ const Filter = () => {
       <span>
         <label style={{ paddingRight: 10 }}>Rating: </label>
         <Rating
-          rating={byRating}
-        //   onClick={(i) =>
-        //     productDispatch({
-        //       type: "FILTER_BY_RATING",
-        //       payload: i + 1,
-        //     })
-        //   }
+          rating={rating}
+          onClick={(i) => setRating(i +1)
+            // productDispatch({
+            //   type: "FILTER_BY_RATING",
+            //   payload: i + 1,
+            // })
+          }
           style={{ cursor: "pointer" }}
         />
       </span>
