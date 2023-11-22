@@ -14,11 +14,14 @@ const Home = () => {
         <div className='product--cart'>
           {products.map((prod) => {
             return <SingleProduct prod={ prod} key={ prod.id} />
+            
           }
           
         )}
+         
         </div>
         </div>
+        
         )};
 
 export default Home
